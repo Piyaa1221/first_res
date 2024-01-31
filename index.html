@@ -5,11 +5,76 @@
         var a = "hello";
         var a = "world";
         console.log(a);
-
+//variables
         const account_id = 1234;
         let account_email = "hey@321gmail.com";
         var account_city = "rajasthnan";
         console.log(account_id);
+
+        //data types- primitive datatype and non premitive datatype
+// primitive ------ number, bigint, string, boolean,null, undefined
+        //"use strit"; trete the js code as a newer js
+console.log(typeof null)//object as output
+console.log(typeof undefined)//undefined as output
+//CONVERSION
+let score = "3abc";
+console.log(typeof score);console.log(typeof (score));//second way is known as method in js
+let valscore = Number(score);
+console.log(typeof valscore); //it returns as a number in output
+console.log(valscore);//it reurns NaN as a number...that means it is no a pure number
+
+
+let score = "piya";
+let valscore = Number(score);
+console.log(typeof valscore); //number
+console.log(valscore);//it returns NaN in output bcz we cannot covert any string into number
+
+let score = null;
+let valscore = Number(score);
+console.log(typeof valscore); //number
+console.log(valscore);//0
+
+let score = undefined;
+let valscore = Number(score);
+console.log(typeof valscore); //number
+console.log(valscore);//NaN
+
+
+let score = true;
+let valscore = Number(score);
+console.log(typeof valscore); //number
+console.log(valscore);//output as 1 bcz it is a boolean value
+
+
+let score = 1;
+let valscore = boolean(score);
+console.log(typeof valscore); //boolean
+console.log(valscore);//true
+//1=> true
+//0=>false
+//""=> false
+//"abc"=>true
+
+
+let score = 33;
+let valscore = String(score);
+console.log(typeof valscore); //string
+console.log(valscore);//33
+
+//          **********--------------    OPERATIONS -------------------**********
+
+console.log(1+2);// 3output
+console.log(1+"2"); //12 output
+console.log("1"+2+ 2); // 122 as a output
+console.log(1+2+"2"); //32 as a output
+console.log(true);//true output
+console.log(1+2);
+console.log(+true); //1 as a output
+console.log(true+);// error
+
+// *********------------ COMPARISONS ---------------*************
+//>,<,==,!=,>=,<=
+
     </script>
     </title>
 </head>
